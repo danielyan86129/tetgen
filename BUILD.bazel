@@ -1,8 +1,10 @@
+package(default_visibility = ["//visibility:public"])
+
 cc_library(
     name = "libtetgen",
     srcs = glob(["*.cxx"]),
     hdrs = glob(["*.h"]),
+    include_prefix = "tetgen",
     # includes = ["."],
-    visibility = ["//:__pkg__"],
     # deps = ["//include:ann_include"],
 )
