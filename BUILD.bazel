@@ -4,6 +4,7 @@ cc_library(
     name = "libtetgen",
     srcs = glob(["*.cxx"]),
     hdrs = glob(["*.h"]),
+    defines = ["TETLIBRARY"],
     include_prefix = "tetgen",
     # includes = ["."],
     # deps = ["//include:ann_include"],
